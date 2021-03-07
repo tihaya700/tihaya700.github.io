@@ -1,0 +1,39 @@
+	タグリスト
+
+△画像 <img src="image/sample.gif" alt="イラスト２" width=100 height=100>
+<img src="/images/image.jpg" >
+
+<p>は	段落
+改行 <br>か</p>
+<h1～h5> 見出しの大きさ
+
+文字関連
+太字　<b></b>,<strong></strong> strongは意味も太字化する
+下線　<u></u>
+斜体　<i></i>
+色　<font color = "文字の色またはカラーコード"></font>
+文字の大きさ　<font size="1～7"></font>	他の操作もある
+
+挿入関連
+リンク先　<a href= "パス名" target="_blank">サイトでの表示名</a>
+target="_blank"は別ウィンドウで開かせる
+背景色(全体)<body bgcolor="カラーコード">
+グラデーションはCSSで構築 
+背景画像
+リスト
+順序なしリスト<ul type="ボタンの表示">
+<li>で羅列
+ボタンはdiscやcircleなど	
+順序ありリスト　<ol type=文字や数字>
+start = 文字や数字でそこから始められる
+画像の挿入
+<img src=ファイルのパス名" alt="説明" title="タイトル" width = 幅 height 高さ>
+パス名は相対パス、絶対パス、ＵＲＬなど、少し難しい
+背景画像の挿入
+メモは<!--  -->	
+
+CSS
+<div style="background: url(パス);">
+
+
+	

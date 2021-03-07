@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>TAKATUKI</title>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP');
+*{
+    font-family: 'Noto Sans JP', sans-serif;
+}
+</style>  
+
+</head>
+<div class="header">
+<header>
+<style>a {
+  text-decoration:none; 
+}</style>
+<ul id="nav">
+	<li><img src="rogo.jpg" alt="ロゴ" title="rogo" width = 170px height = 80px></li>
+  <li><a href="#"><font color="black">CORPORATE</font><br><font color="black">企業情報</font></a>
+    <ul class="submenu">
+      <li><a href="#">会社概要</a></li>
+      <li><a href="#">ヒストリー</a></li>
+      <li><a href="#">プライバシーポリシー</a></li>
+    </ul>
+  </li>
+ <li><a href="#"><font color="black">SERVICE</font><br><font color="black">サービス</font></a>
+      <ul class="submenu">
+        <li><a href="#">営業部</a></li>
+        <li><a href="#">総務部</a></li>
+        <li><a href="#">経理部</a></li>
+    </ul>
+ </li>
+	<li><a href="#"><font color="black">NEWS</font><br><font color="black">お知らせ</font></a>
+    <ul class="submenu">
+      <li><a href="#">プレスリリース</a></li>
+      <li><a href="#">お知らせ</a></li>
+      <li><a href="#">掲載情報</a></li>
+    </ul>
+  </li>
+<li><a href="#"><font color="black">IR</font><br><font color="black">投資家情報</font></a>
+    <ul class="submenu">
+      <li><a href="#">IRニュース一覧</a></li>
+      <li><a href="#">業績ハイライト</a></li>
+      <li><a href="#">株式情報</a></li>
+    </ul>
+</li>
+<li><a href="#"><font color="black">CONTACT</font><br><font color="black">お問い合わせ</font></a>
+    <ul class="submenu">
+      <li><a href="#">アクセス</a></li>
+      <li><a href="#">取材のお問い合わせ</a></li>
+      <li><a href="#">その他のお問い合わせ</a></li>
+    </ul>
+</li>
+<li><select name=”言語”>
+<option value=”language”>言語を選択</option>
+<option value=”Jap”>日本語</option>
+<option value=”Eng”>英語
+</option></li>
+</select>
+</ul>
+</div>
+<style>#nav {
+  list-style: none;
+  overflow: hidden;
+}
+/*ここからメニューアニメーション*/
+
+#nav li{
+  position: relative;
+  width: 20%;
+  text-align: center;
+} 
+#nav li a{
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1;
+  text-decoration: none;
+}
+
+#nav > li:hover > a{
+  border-radius: 3px 3px 0 0;
+}
+#nav li ul{
+  list-style: none;
+  position: relative;
+  top: 100%;
+ 
+  border-radius: 0 0 3px 3px;
+}
+#nav li:last-child ul{
+  left: -100%;
+  width: 100%
+}
+#nav li ul li{
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  color: #fff;
+  -moz-transition: .2s;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  -ms-transition: .2s;
+  transition: .2s;
+  margin: 0px;
+  padding: 0px;
+}
+#nav li ul li a{
+  padding: 13px 5px;
+  background: dimgray;
+  text-align: left;
+  font-size: 12px;
+  font-weight: normal;
+}
+#nav li:hover ul li{
+  overflow: visible;
+  height: 38px;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+#nav li:hover ul li:first-child{
+  border-top: 0;
+}
+#nav li:hover ul li:last-child{
+  border-bottom: 0;
+}
+#nav li:hover ul li:last-child a{
+  border-radius: 0 0 3px 3px;
+}
+/*ここまでメニューアニメーション*/
+
+#nav li {
+  width: 175px;
+  text-align: center;
+  background-color:white;
+  float: left;
+  margin-top: 30px  
+
+}
+ 
+#nav li a {
+  text-decoration: none;
+  font-weight: bold; 
+  }
+  #nav li a:hover {
+    color: deeppink;   
+}
+#nav li{z-index: 2;}
+.submenu li a{
+color: white;
+
+
+}
+</style>
+
+
+</header>
+
+  <body>
+   <ul class="top-banner">
+    <li><img src="summer.jpg" alt="夏" title="夏" ></li>
+    <li><img src="autumn.jpg" alt="秋" title="秋" ></li>
+    <li><img src="winter.jpg" alt="冬" title="冬" ></li> <!---javascriptで横並びスクロール機能-->
+</ul>
+<style>
+.top-banner{list-style: none;
+text-align: center;
+position:relative;
+margin-top: 0px;
+}
+
+.top-banner { z-index: 1;}
+.top-banner li { 
+ display:inline-block;
+ height: 325px;
+width: 425px;
+}
+img{height: 100%;
+width: 100%;
+ }
+/*端に余白ができないようにしたい*/
+
+</style>
+
+<center><h2><b>NEWS</b></h2>
+<ul class="middle-banner">
+  <li class="content"><a href="#"><img src="scr1.jpg" alt="ニュース画像1" title="ニュース画像1" ></a></li> <!---cssで横並びスクロール機能-->
+  <li class="content"><a href="#"><img src="scr2.jpg" alt="ニュース画像2" title="ニュース画像2" ></a></li>
+  <li class="content"><a href="#"><img src="scr3.jpg" alt="ニュース画像3" title="ニュース画像3" ></a></li>
+  <li class="content"><a href="#"><img src="scr4.jpg" alt="ニュース画像4" title="ニュース画像4" ></a></li>
+  <li class="content"><a href="#"><img src="scr5.jpg" alt="ニュース画像5" title="ニュース画像5" ></a></li>
+</ul>
+<div class="box"><a href="#">ニュース一覧へ　→</a></div></center><!--cssで加工しておく-->
+<!--横並びリストの設定-->
+<style>
+.middle-banner {
+  overflow-x: auto;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+    }
+ 
+
+ 
+
+/* スクロールの幅の設定 */
+.middle-banner::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+/* スクロールの背景の設定 */
+.middle-banner::-webkit-scrollbar-track {
+  border-radius: 5px;
+  box-shadow: 0 0 4px #aaa inset;
+}
+
+/* スクロールのつまみ部分の設定 */
+.middle-banner::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: #1959A8;
+}
+
+    .content {
+      /* 横スクロール用 */
+      display: inline-block;
+      width: 350px;
+
+      /* 見た目調整 */
+      height: 250px;
+      margin: 16px;
+      font-size: 48px;
+      background:white;
+      padding: 0px 3px;
+      margin: 0px;
+    }
+
+
+
+</style>
+
+
+<center><h2><b>TOPICS</b></h2>
+<div class="box"><a href="#">もっと見る →</a></div></center><!--cssで加工しておく-->
+<style>.box {
+  padding: 25px 20px 0px 20px;
+  margin-bottom: 0px;
+  font-weight: bold;
+  width: 200px;
+  height: 50px;
+  color: black;/*文字色*/
+  background: #FFF;
+  border: solid 1px black;/*線*/
+  border-radius: 10px;/*角の丸み*/
+
+  transition: 1s;
+
+  
+}
+.box:hover {
+    color: white;
+    background-color:hotpink;
+    
+}
+
+</style> 
+
+<center><h2><b>PICK UP</b></h2>
+<ul class="icon-list">
+  <li class="icons"><img src="icon1.jpg" alt="小アイコン1" title="小アイコン1" ></li>
+  <li class="icons"><img src="icon2.jpg" alt="小アイコン2" title="小アイコン2" ></li>
+  <li class="icons"><img src="icon3.jpg" alt="小アイコン3" title="小アイコン3" ></li>
+  <li class="icons"><img src="icon4.jpg" alt="小アイコン4" title="小アイコン4" ></li>
+  <li class="icons"><img src="icon5.jpg" alt="小アイコン5" title="小アイコン5" ></li>
+  <li class="icons"><img src="icon6.jpg" alt="小アイコン6" title="小アイコン6" ></li> <!---cssで横並びスクロール機能-->
+</ul>
+
+<style>
+.icon-list {
+  overflow-x: auto;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+    }
+.icon-list img{
+      border-radius: 50px;
+}
+
+
+
+    .icons {
+      /* 横スクロール用 */
+      display: inline-block;
+      width: 375px;
+      height: 225px;
+      
+    }
+  /* スクロールの幅の設定 */
+.icon-list::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+/* スクロールの背景の設定 */
+.icon-list::-webkit-scrollbar-track {
+  border-radius: 5px;
+  box-shadow: 0 0 4px #aaa inset;
+}
+
+/* スクロールのつまみ部分の設定 */
+.icon-list::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: aquamarine;
+}
+
+</style>
+    
+<div class="color">
+<div id="fooder">
+
+<ul class="fooder-list">
+<li><a href="#">企業情報</a></li>
+<li><a href="#">会社概要</a></li>
+<li><a href="#">ヒストリー</a></li>
+<li><a href="#">プライバシーポリシー</a></li>
+</ul>
+<!-- ここで改行-->
+<ul class="fooder-list">
+<li><a href="#">サービス</a></li>
+<li><a href="#">営業部</a></li>
+<li><a href="#">総務部</a></li>
+<li><a href="#">経理部</a></li>
+</ul>
+
+<ul class="fooder-list">
+  <li><a href="#">お知らせ</a></li>
+  <li><a href="#">プレスリリース</a></li>
+  <li><a href="#">お知らせ</a></li>
+  <li><a href="#">掲載情報</a></li>
+  </ul>
+  <!-- ここで改行-->
+  <ul class="fooder-list">
+  <li><a href="#">採用情報</a></li>
+  <li><a href="#">新卒採用</a></li>
+  <li><a href="#">中途採用</a></li>
+  <li><a href="#">インターンシップ</a></li>
+  </ul>
+  <!-- ここで改行-->
+  <ul class="fooder-list">
+  <li><a href="#">投資家情報</a></li>
+  <li><a href="#">IRニュース一覧</a></li>
+  <li><a href="#">業績ハイライト</a></li>
+  <li><a href="#">株式情報</a></li>
+  </ul>
+  <!-- ここで改行-->
+  <ul class="fooder-list">
+  <li><a href="#">コンタクト</a></li>
+  <li><a href="#">アクセス</a></li>
+  <li><a href="#">取材のお問い合わせ</a></li>
+  <li><a href="#">その他のお問い合わせ</a></li>
+</ul>
+</div>
+</div>
+</body>
+<style>
+.fooder-list li{
+  list-style: none;
+  overflow: auto;
+  width: 170px;
+}
+ 
+ .fooder-list {
+    text-align: center;
+  background-color:mistyrose;
+  float: left;
+  
+}
+ 
+.fooder-list a {
+  text-decoration: none;
+  color: black;
+    }
+</style>
+
+<style>
+.fooder-list { font-size: 20px; }
+#fooder {
+  background-color: mistyrose;
+  padding-bottom: 225px;
+  margin-bottom: 0px;
+  border-bottom: 0px;
+  border-bottom: black ;
+  
+}
+
+</style>
+
+<div class="bottom">
+<fooder >
+  <hr>
+  <div class="line">
+  <center><p>©Takatuki.Inc</p></center><!--余白どうやって消す？-->
+</div>
+</fooder>
+
+</div>
+</div>
+<style>
+.bottom{
+    background-color: mistyrose;
+  margin: 0px;
+  padding: 0px;
+  border-bottom: 0px;
+  }
+  #fooder a:hover {
+    color: hotpink;   
+}
+
+
+
+</style>
+
+
+
+
+
+
+</html>

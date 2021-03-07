@@ -1,0 +1,7 @@
+cssタグリスト
+
+cssを適用する部分は<style></style>で囲む
+body{}で全体を指示、div{}で任意の区間を指示
+background  #カラーコード;
+グラデーションはbackground: radial-gradient(カラーコード１,カラーコード２)
+
